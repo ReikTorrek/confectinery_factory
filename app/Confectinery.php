@@ -74,6 +74,14 @@ class Confectinery
         $this->productionLifeTime[$productionType] = $lifeTime;
     }
 
+    /**
+     * @return array
+     */
+    public function getEquipment()
+    {
+        return $this->equipment;
+    }
+
     private function clearProduction()
     {
         $this->production = [];
